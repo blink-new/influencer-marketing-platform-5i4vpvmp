@@ -288,6 +288,274 @@ function LandingPage() {
         </div>
       </section>
 
+      {/* Success Stories */}
+      <section className="relative z-10 py-20 bg-gradient-to-r from-primary/5 to-accent/5">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <Badge className="mb-4 bg-primary/20 text-primary border-primary/30">
+              🎯 Success Stories
+            </Badge>
+            <h2 className="text-4xl font-bold mb-4">Real Results from Real Campaigns</h2>
+            <p className="text-xl text-muted-foreground">See how our affordable rates deliver exceptional ROI</p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            <Card className="glass-effect hover:shadow-xl transition-all duration-300">
+              <CardContent className="p-8">
+                <div className="flex items-center mb-4">
+                  <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center mr-4">
+                    <TrendingUp className="w-6 h-6 text-white" />
+                  </div>
+                  <div>
+                    <h4 className="font-bold">TechStart Inc.</h4>
+                    <p className="text-sm text-muted-foreground">SaaS Company</p>
+                  </div>
+                </div>
+                <p className="text-muted-foreground mb-4">
+                  "Increased our user signups by 340% with just 5 micro-influencers. The affordable rates made it possible to test multiple creators."
+                </p>
+                <div className="flex justify-between text-sm">
+                  <span className="text-green-600 font-semibold">+340% Signups</span>
+                  <span className="text-primary font-semibold">5 Creators</span>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="glass-effect hover:shadow-xl transition-all duration-300">
+              <CardContent className="p-8">
+                <div className="flex items-center mb-4">
+                  <div className="w-12 h-12 bg-gradient-to-br from-pink-500 to-pink-600 rounded-full flex items-center justify-center mr-4">
+                    <Heart className="w-6 h-6 text-white" />
+                  </div>
+                  <div>
+                    <h4 className="font-bold">BeautyGlow</h4>
+                    <p className="text-sm text-muted-foreground">Cosmetics Brand</p>
+                  </div>
+                </div>
+                <p className="text-muted-foreground mb-4">
+                  "Our skincare launch reached 2M+ people through 12 beauty creators. Best ROI we've ever achieved at these rates!"
+                </p>
+                <div className="flex justify-between text-sm">
+                  <span className="text-green-600 font-semibold">2M+ Reach</span>
+                  <span className="text-primary font-semibold">12 Creators</span>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="glass-effect hover:shadow-xl transition-all duration-300">
+              <CardContent className="p-8">
+                <div className="flex items-center mb-4">
+                  <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-green-600 rounded-full flex items-center justify-center mr-4">
+                    <Target className="w-6 h-6 text-white" />
+                  </div>
+                  <div>
+                    <h4 className="font-bold">FitLife Gear</h4>
+                    <p className="text-sm text-muted-foreground">Fitness Equipment</p>
+                  </div>
+                </div>
+                <p className="text-muted-foreground mb-4">
+                  "Generated $50K in sales from a $2K campaign budget. The platform's affordable creator rates are unmatched."
+                </p>
+                <div className="flex justify-between text-sm">
+                  <span className="text-green-600 font-semibold">2500% ROI</span>
+                  <span className="text-primary font-semibold">8 Creators</span>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials */}
+      <section className="relative z-10 py-20 bg-white/50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold mb-4">What Our Community Says</h2>
+            <p className="text-xl text-muted-foreground">Trusted by creators and brands worldwide</p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <Card className="glass-effect">
+              <CardContent className="p-6">
+                <div className="flex items-center mb-4">
+                  <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-pink-500 rounded-full flex items-center justify-center mr-3">
+                    <span className="text-white font-bold">S</span>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold">Sarah Chen</h4>
+                    <p className="text-sm text-muted-foreground">Beauty Creator • 150K followers</p>
+                  </div>
+                </div>
+                <div className="flex mb-3">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="w-4 h-4 fill-yellow-400 text-yellow-400" />
+                  ))}
+                </div>
+                <p className="text-muted-foreground">
+                  "Finally found a platform with fair rates! Made $3K last month from 4 campaigns. The brands are professional and payments are always on time."
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="glass-effect">
+              <CardContent className="p-6">
+                <div className="flex items-center mb-4">
+                  <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-full flex items-center justify-center mr-3">
+                    <span className="text-white font-bold">M</span>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold">Marcus Johnson</h4>
+                    <p className="text-sm text-muted-foreground">Tech Reviewer • 85K followers</p>
+                  </div>
+                </div>
+                <div className="flex mb-3">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="w-4 h-4 fill-yellow-400 text-yellow-400" />
+                  ))}
+                </div>
+                <p className="text-muted-foreground">
+                  "Love how easy it is to find relevant tech brands. The messaging system is smooth and the rates are competitive. Highly recommend!"
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="glass-effect">
+              <CardContent className="p-6">
+                <div className="flex items-center mb-4">
+                  <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-emerald-500 rounded-full flex items-center justify-center mr-3">
+                    <span className="text-white font-bold">A</span>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold">Alex Rivera</h4>
+                    <p className="text-sm text-muted-foreground">Marketing Director • EcoClean</p>
+                  </div>
+                </div>
+                <div className="flex mb-3">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="w-4 h-4 fill-yellow-400 text-yellow-400" />
+                  ))}
+                </div>
+                <p className="text-muted-foreground">
+                  "Best platform for finding authentic creators. The affordable rates let us work with more influencers and get better results. Game changer!"
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Pricing Section */}
+      <section className="relative z-10 py-20 bg-gradient-to-br from-primary/10 via-accent/10 to-primary/10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <Badge className="mb-4 bg-green-500/20 text-green-700 border-green-500/30">
+              💰 Affordable Rates
+            </Badge>
+            <h2 className="text-4xl font-bold mb-4">Transparent, Fair Pricing</h2>
+            <p className="text-xl text-muted-foreground">No hidden fees. No surprises. Just great value.</p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            <Card className="glass-effect border-2 border-border/50">
+              <CardContent className="p-8 text-center">
+                <h3 className="text-2xl font-bold mb-2">Creators</h3>
+                <div className="text-4xl font-bold text-primary mb-4">Free</div>
+                <p className="text-muted-foreground mb-6">Join and start earning</p>
+                <ul className="space-y-3 text-left mb-8">
+                  <li className="flex items-center">
+                    <CheckCircle className="w-5 h-5 text-green-500 mr-2" />
+                    <span>Browse unlimited campaigns</span>
+                  </li>
+                  <li className="flex items-center">
+                    <CheckCircle className="w-5 h-5 text-green-500 mr-2" />
+                    <span>Direct brand messaging</span>
+                  </li>
+                  <li className="flex items-center">
+                    <CheckCircle className="w-5 h-5 text-green-500 mr-2" />
+                    <span>Portfolio showcase</span>
+                  </li>
+                  <li className="flex items-center">
+                    <CheckCircle className="w-5 h-5 text-green-500 mr-2" />
+                    <span>Secure payments</span>
+                  </li>
+                </ul>
+                <Button className="w-full" onClick={() => handleGetStarted('creator')}>
+                  Join as Creator
+                </Button>
+              </CardContent>
+            </Card>
+
+            <Card className="glass-effect border-2 border-primary shadow-xl scale-105">
+              <CardContent className="p-8 text-center relative">
+                <Badge className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-primary text-white">
+                  Most Popular
+                </Badge>
+                <h3 className="text-2xl font-bold mb-2">Brands - Starter</h3>
+                <div className="text-4xl font-bold text-primary mb-4">$99<span className="text-lg text-muted-foreground">/mo</span></div>
+                <p className="text-muted-foreground mb-6">Perfect for small businesses</p>
+                <ul className="space-y-3 text-left mb-8">
+                  <li className="flex items-center">
+                    <CheckCircle className="w-5 h-5 text-green-500 mr-2" />
+                    <span>Up to 5 active campaigns</span>
+                  </li>
+                  <li className="flex items-center">
+                    <CheckCircle className="w-5 h-5 text-green-500 mr-2" />
+                    <span>Creator discovery tools</span>
+                  </li>
+                  <li className="flex items-center">
+                    <CheckCircle className="w-5 h-5 text-green-500 mr-2" />
+                    <span>Campaign analytics</span>
+                  </li>
+                  <li className="flex items-center">
+                    <CheckCircle className="w-5 h-5 text-green-500 mr-2" />
+                    <span>Priority support</span>
+                  </li>
+                </ul>
+                <Button className="w-full" onClick={() => handleGetStarted('brand')}>
+                  Start Free Trial
+                </Button>
+              </CardContent>
+            </Card>
+
+            <Card className="glass-effect border-2 border-border/50">
+              <CardContent className="p-8 text-center">
+                <h3 className="text-2xl font-bold mb-2">Brands - Pro</h3>
+                <div className="text-4xl font-bold text-primary mb-4">$299<span className="text-lg text-muted-foreground">/mo</span></div>
+                <p className="text-muted-foreground mb-6">For growing companies</p>
+                <ul className="space-y-3 text-left mb-8">
+                  <li className="flex items-center">
+                    <CheckCircle className="w-5 h-5 text-green-500 mr-2" />
+                    <span>Unlimited campaigns</span>
+                  </li>
+                  <li className="flex items-center">
+                    <CheckCircle className="w-5 h-5 text-green-500 mr-2" />
+                    <span>Advanced analytics</span>
+                  </li>
+                  <li className="flex items-center">
+                    <CheckCircle className="w-5 h-5 text-green-500 mr-2" />
+                    <span>White-label reports</span>
+                  </li>
+                  <li className="flex items-center">
+                    <CheckCircle className="w-5 h-5 text-green-500 mr-2" />
+                    <span>Dedicated account manager</span>
+                  </li>
+                </ul>
+                <Button className="w-full" onClick={() => handleGetStarted('brand')}>
+                  Contact Sales
+                </Button>
+              </CardContent>
+            </Card>
+          </div>
+
+          <div className="text-center mt-12">
+            <p className="text-lg text-muted-foreground">
+              💡 <strong>Why our rates are affordable:</strong> We believe in fair partnerships. 
+              Creators keep 85% of campaign payments, and brands get maximum ROI with our efficient matching system.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Social Media Icons */}
       <section className="relative z-10 py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -296,6 +564,101 @@ function LandingPage() {
             <Instagram className="w-12 h-12 text-pink-500 hover:scale-110 transition-transform cursor-pointer" />
             <Youtube className="w-12 h-12 text-red-500 hover:scale-110 transition-transform cursor-pointer" />
             <Twitter className="w-12 h-12 text-blue-500 hover:scale-110 transition-transform cursor-pointer" />
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="relative z-10 py-20 bg-white/50">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold mb-4">Frequently Asked Questions</h2>
+            <p className="text-xl text-muted-foreground">Everything you need to know about our affordable rates</p>
+          </div>
+
+          <div className="space-y-6">
+            <Card className="glass-effect">
+              <CardContent className="p-6">
+                <h3 className="text-lg font-semibold mb-3">How are your rates more affordable than competitors?</h3>
+                <p className="text-muted-foreground">
+                  We operate on a lean model with lower overhead costs, allowing us to offer competitive rates. 
+                  Creators keep 85% of campaign payments (vs industry standard of 70%), and brands pay 50% less 
+                  in platform fees compared to major competitors.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="glass-effect">
+              <CardContent className="p-6">
+                <h3 className="text-lg font-semibold mb-3">What's included in the campaign management?</h3>
+                <p className="text-muted-foreground">
+                  All plans include campaign creation tools, creator discovery, messaging system, content approval 
+                  workflows, performance tracking, and secure payment processing. Pro plans add advanced analytics 
+                  and dedicated support.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="glass-effect">
+              <CardContent className="p-6">
+                <h3 className="text-lg font-semibold mb-3">How do creators get paid?</h3>
+                <p className="text-muted-foreground">
+                  Payments are processed securely through our platform within 7 days of campaign completion. 
+                  We support bank transfers, PayPal, and digital wallets. No hidden fees - creators receive 
+                  exactly what was agreed upon.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="glass-effect">
+              <CardContent className="p-6">
+                <h3 className="text-lg font-semibold mb-3">Can I try the platform before committing?</h3>
+                <p className="text-muted-foreground">
+                  Absolutely! Creators can join for free and browse campaigns immediately. Brands get a 14-day 
+                  free trial with full access to all features. No credit card required to start.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="glass-effect">
+              <CardContent className="p-6">
+                <h3 className="text-lg font-semibold mb-3">What industries do you support?</h3>
+                <p className="text-muted-foreground">
+                  We support all industries - from tech and beauty to fitness and food. Our diverse creator 
+                  network spans every niche, ensuring perfect matches for any brand or product category.
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Final CTA */}
+      <section className="relative z-10 py-20 bg-gradient-to-r from-primary to-accent">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-4xl font-bold text-white mb-4">Ready to Get Started?</h2>
+          <p className="text-xl text-white/90 mb-8">
+            Join 1000+ creators and 20+ brands already growing with our affordable rates
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button 
+              size="lg" 
+              variant="secondary"
+              className="bg-white text-primary hover:bg-white/90 px-8 py-6 text-lg rounded-xl shadow-lg"
+              onClick={() => handleGetStarted('creator')}
+            >
+              <Camera className="w-5 h-5 mr-2" />
+              Join as Creator - Free
+            </Button>
+            <Button 
+              size="lg" 
+              variant="outline"
+              className="border-2 border-white text-white hover:bg-white hover:text-primary px-8 py-6 text-lg rounded-xl"
+              onClick={() => handleGetStarted('brand')}
+            >
+              <Target className="w-5 h-5 mr-2" />
+              Start Brand Trial
+            </Button>
           </div>
         </div>
       </section>
